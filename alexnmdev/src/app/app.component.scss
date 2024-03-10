@@ -1,9 +1,13 @@
-.main {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.app {
+  margin: 2rem;
   &__message {
+    display: flex;
+    justify-content: center;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 10rem;
+    font-size: 7rem;
+  }
+  &__button {
+    display: flex;
+    justify-content: center;
   }
 }
