@@ -1,0 +1,26 @@
+.down-button {
+  display: inline-block;
+  &__icon {
+    font-size: 4rem;
+    width: 4rem;
+    height: 4rem;
+  }
+  &:hover {
+    cursor: pointer;
+    animation: bounce 1s ease-in-out alternate infinite;
+  }
+}
+
+@media (max-width: 480px) {
+  .down-button {
+    &__icon {
+      animation: bounce 1s ease-in-out alternate infinite;
+    }
+  }
+}
+
+@keyframes bounce {
+  to {
+    transform: translateY(0.5rem);
+  }
+}
