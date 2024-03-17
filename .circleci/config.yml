@@ -9,8 +9,16 @@ jobs:
       - checkout
       - browser-tools/install-chrome: 
           channel: stable
+          filters:
+            branches:
+              only:
+                - main
       - node/install-packages:
           app-dir: ./alexnmdev
+          filters:
+            branches:
+              only:
+                - main
       - run:
           working_directory: ./alexnmdev
           command: npm run test
