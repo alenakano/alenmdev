@@ -19,3 +19,7 @@ workflows:
   test_my_app:
     jobs:
       - test
+          filters:
+            branches:
+              only:
+                - main
