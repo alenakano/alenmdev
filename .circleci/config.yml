@@ -14,12 +14,12 @@ jobs:
       - run:
           working_directory: ./alexnmdev
           command: npm run test
+          filters:
+            branches:
+              only:
+                - main
 
 workflows:
   test_my_app:
     jobs:
       - test
-          filters:
-            branches:
-              only:
-                - main
